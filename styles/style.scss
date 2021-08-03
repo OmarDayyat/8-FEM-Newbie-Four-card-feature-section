@@ -4,15 +4,150 @@
   General
 ================*/
 
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+html{
+  height: 100vh;
+  background-color: $Very-Light-Gray;
+  font-size: 13px;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1{
+  color:$Very-Dark-Blue;
+  margin-bottom: 30px;
+  font-family: $font;
+  font-weight: 600;
+  span{  
+    color: $Grayish-Blue;
+    font-family: $font;
+    font-weight: 400;
+    display: block;
+  }
+}
+
+h2{
+  color: $Very-Dark-Blue;
+  text-align: start;
+  font-family: $font;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+p{
+  color: $Grayish-Blue;
+  margin-bottom: 50px;
+  font-family: $font;
+}
+
+/*==============
+  Main Container
+================*/
+
+.main-container{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*==============
+  Text Container
+================*/
+
+.text-container{
+  width: 34vw;
+}
+
+/*===============
+  Cards Container
+=================*/
+
+.cards-container{
+  display: flex;
+}
+
+/*===============
+  Cards 
+=================*/
+
+.cards{
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px hsla(0, 0%, 0%,0.15);
+  padding: 30px;
+  margin: 20px;
+  max-height: 250px;
+  width: 350px;
+  p{
+    width: 90%;
+    text-align: start;
+    margin-bottom: 30px;
+  }
+  img{
+    position: relative;
+    left: 35%;
+  }
+}
+
+.card-1{
+  border-top: 5px solid $Cyan;
+  transform: translateY(50%);
+}
+
+.card-2{
+  border-top: 5px solid $Red;
+}
+
+.card-3{
+  border-top: 5px solid $Orange;
+}
+
+.card-4{
+  border-top: 5px solid $Blue;
+  transform: translateY(50%);
+}
 
 /*==============
   Attribution
 ================*/
 
-.attribution { 
+.attribution {
+  margin-bottom: 10px; 
   font-size: 11px; text-align: center;
   a {
      color: hsl(228, 45%, 44%);
      }
+}
+
+@media only screen and (max-width:1024px){
+
+  .text-container{
+    width: 80vw;
+  }
+
+  .cards-container{
+    flex-direction: column;
+  }
+
+  .card-1{
+    transform: translateY(0%);
+  }
+  
+  .card-4{
+    transform: translateY(0%);
+  }
 }

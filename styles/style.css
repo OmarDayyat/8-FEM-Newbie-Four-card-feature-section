@@ -1,15 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 /*==============
   General
 ================*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+  background-color: #fafafa;
+  font-size: 13px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #4c4e61;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+h1 span {
+  color: #a3a5ae;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  display: block;
+}
+
+h2 {
+  color: #4c4e61;
+  text-align: start;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #a3a5ae;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*==============
+  Main Container
+================*/
+.main-container {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*==============
+  Text Container
+================*/
+.text-container {
+  width: 34vw;
+}
+
+/*===============
+  Cards Container
+=================*/
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*===============
+  Cards 
+=================*/
+.cards {
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  margin: 20px;
+  max-height: 250px;
+  width: 350px;
+}
+
+.cards p {
+  width: 90%;
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.cards img {
+  position: relative;
+  left: 35%;
+}
+
+.card-1 {
+  border-top: 5px solid #45d3d3;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.card-2 {
+  border-top: 5px solid #ea5353;
+}
+
+.card-3 {
+  border-top: 5px solid #fcaf4a;
+}
+
+.card-4 {
+  border-top: 5px solid #549ef2;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
 /*==============
   Attribution
 ================*/
 .attribution {
+  margin-bottom: 10px;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media only screen and (max-width: 1024px) {
+  .text-container {
+    width: 80vw;
+  }
+  .cards-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-1 {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .card-4 {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
